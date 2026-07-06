@@ -3,9 +3,13 @@ scikit-learn
 pandas
 numpy
 
+
 pandas
 numpy
 scikit-learn
 joblib
+mlflow
+
+
 mlflow
 
