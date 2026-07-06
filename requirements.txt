@@ -1,4 +1,5 @@
 
+
 scikit-learn
 pandas
 numpy
@@ -11,5 +12,12 @@ joblib
 mlflow
 
 
+mlflow
+
+
+pandas
+numpy
+scikit-learn
+joblib
 mlflow
 
