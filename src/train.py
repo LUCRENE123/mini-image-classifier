@@ -17,8 +17,15 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # 3. Définir l'expérience MLflow
-mlflow.set_experiment("mini-projet-mlflow")
+import os
 
+tracking_dir = os.path.abspath("mlruns")
+os.makedirs(tracking_dir, exist_ok=True)
+
+import mlflow
+
+mlflow.set_tracking_uri("sqlite:///mlflow.db")
+mlflow.set_experiment("mini-projet-mlflow")
 # 4. RUN MLflow
 with mlflow.start_run():
 
