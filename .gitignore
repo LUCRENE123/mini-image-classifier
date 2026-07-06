@@ -1,4 +1,16 @@
+# Python cache
 __pycache__/
 *.pyc
-*.pkl
+
+# Jupyter
 .ipynb_checkpoints/
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Virtual environment
+venv/
+
+# Models / binaries
+*.pkl
