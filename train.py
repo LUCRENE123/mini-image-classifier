@@ -19,6 +19,10 @@ with mlflow.start_run():
     X = digits.data
     y = digits.target
 
+    # ❌ DATA SCIENTIST B - modification volontaire (BUG)
+    # Suppression d'une colonne importante du dataset
+    X = X[:, 1:]   # on supprime la première colonne
+
     # Split
     X_train, X_test, y_train, y_test = train_test_split(
         X,
@@ -51,4 +55,3 @@ with mlflow.start_run():
     mlflow.log_metric("accuracy", accuracy)
 
     mlflow.sklearn.log_model(model, "model")
-
